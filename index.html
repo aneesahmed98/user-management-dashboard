@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management Dashboard</title>
+  <link rel="stylesheet" href="style.css"> <!-- This connects the CSS file -->
+</head>
+<body>
+  <h1>User Management Dashboard</h1>
+  <div id="app">
+    <div class="user-list">
+        <h2>Users</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Department</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="user-table-body">
+            <!-- Users will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="user-form">
+        <h2>Add/Edit User</h2>
+        <form id="user-form">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" required>
+          
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          
+          <label for="department">Department:</label>
+          <input type="text" id="department" required>
+          
+          <button type="submit">Save User</button>
+        </form>
+      </div>
+      
+
+
+  </div> <!-- This is where our content will go -->
+  <script src="script.js"></script> <!-- This connects the JavaScript file -->
+</body>
+</html>
